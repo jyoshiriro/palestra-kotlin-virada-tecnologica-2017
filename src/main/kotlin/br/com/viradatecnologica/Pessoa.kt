@@ -1,8 +1,3 @@
-import java.util.*
-
-/**
- * Created by jyoshiriro on 6/10/17.
- */
 data class Pessoa (
     var id:Int,
     var nome:String

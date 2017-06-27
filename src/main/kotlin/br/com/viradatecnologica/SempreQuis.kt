@@ -1,6 +1,4 @@
-/**
- * Created by jyoshiriro on 6/10/17.
- */
+
 fun main(args: Array<String>) {
 
     val textoTeste = null
@@ -16,5 +14,10 @@ fun main(args: Array<String>) {
     for (i in (1..10 step 2)) {
         println("impar: $i")
     }
+
+    fun String.giria(): String {
+        return "C é loko, $this?!"
+    }
+    println("Marcio".giria())
 
 }

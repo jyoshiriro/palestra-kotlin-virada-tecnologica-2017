@@ -1,8 +1,3 @@
-import javax.swing.JOptionPane
-
-/**
- * Created by jyoshiriro on 6/10/17.
- */
 fun main(args: Array<String>) {
 
     val frutas = mutableListOf("amora","banana","cacau","damasco")

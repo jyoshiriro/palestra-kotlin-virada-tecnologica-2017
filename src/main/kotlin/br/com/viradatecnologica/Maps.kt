@@ -1,8 +1,3 @@
-import br.com.viradatecnologica.Pais
-
-/**
- * Created by jyoshiriro on 6/10/17.
- */
 fun main(args: Array<String>) {
 
     val estados = mutableMapOf("SP" to "São Paulo", "MG" to "Minas Gerais", "PA" to "Pará")
