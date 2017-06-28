@@ -18,6 +18,11 @@ fun main(args: Array<String>) {
     fun String.giria(): String {
         return "C é loko, $this?!"
     }
+
+    fun Int.loko(param:Int): Int {
+        return this+(param*2)
+    }
+
     println("Marcio".giria())
 
 }

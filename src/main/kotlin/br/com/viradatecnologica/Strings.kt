@@ -26,8 +26,6 @@ order by data_criacao
 
     println("Letras à esquerda: ${"7".padStart(3,'0')}")
 
-    println("Inverson: ${nome.reversed()}")
-
     println("3x é demais! ${nome.repeat(3)}")
 
     nome.forEach {

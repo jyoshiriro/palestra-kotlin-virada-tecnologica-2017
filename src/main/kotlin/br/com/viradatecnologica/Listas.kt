@@ -4,11 +4,7 @@ fun main(args: Array<String>) {
 
     println(frutas)
 
-    println("3º ${frutas[2]}")
-
-    println("1º ${frutas.first()}")
-
-    println("Último: ${frutas.last()}")
+    println("3 fruta: ${frutas[2]}")
 
     frutas+="tomate"
     println(frutas)
@@ -19,12 +15,16 @@ fun main(args: Array<String>) {
     frutas+=mutableListOf("morango", "abacaxi")
     println(frutas)
 
+    println("1º ${frutas.first()}")
+
+    println("Último: ${frutas.last()}")
+
     frutas.forEach {
         println(it)
     }
 
     frutas.forEachIndexed { i, fruta ->
-        println("${i+1}ª fruta: $fruta")
+        println("$i - $fruta")
     }
 
     val frutasComC = frutas.filter { it.contains("c") }
@@ -34,11 +34,15 @@ fun main(args: Array<String>) {
     println("Sem 'c': $frutas")
 
 
-    val palavras = mutableListOf("bb", "aaaa", "d", "ccc")
+    val palavras = mutableListOf("bb", "aaaa", "d", "cc2", "cc0", "cc1")
 
     palavras.sortBy{ p -> p.length }
     println(palavras)
 
     palavras.sortByDescending{ p -> p.length }
+    println(palavras)
+
+
+    palavras.sortWith(compareBy({ it.length }, { it }))
     println(palavras)
 }
