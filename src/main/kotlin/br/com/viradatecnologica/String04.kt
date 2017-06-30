@@ -18,7 +18,4 @@ fun main(args: Array<String>) {
 
     println(palavra[2])
 
-    palavra.forEach {
-        println("> $it")
-    }
 }

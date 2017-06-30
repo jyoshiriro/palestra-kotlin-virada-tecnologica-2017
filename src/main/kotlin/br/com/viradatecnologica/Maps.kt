@@ -11,11 +11,11 @@ fun main(args: Array<String>) {
     estados-="RS"
     println(estados)
 
-    estados.forEach { chave, valor ->
-        println("Chave: $chave, de valor $valor")
+    estados.forEach {
+        println("${it.key} - ${it.value}")
     }
 
-    val m2 = mutableMapOf(1 to 3.5)
+    val mapaLoko = mutableMapOf(1 to "abelha")
     // m2.get já indica os tipos de chave e o valor
     // ex: m2.get("oi") erro de compilação!
 
